@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    width: 80%;
+    margin: auto;
+    background-color: #71D2F5;
+}
+button{
+    background-color: #9CBE5C;
+    color: #ffffff;
+    font-weight: bolder;
+    border: none;
+    font-size: 1.7rem;
+    display: block;
+    position: fixed;
+    left: 75%;
+    cursor: pointer;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+}
+button:hover{
+    color: #9CBE5C;
+    background-color: #ffffff;
+}
+h1{
+    text-align: center;
+    font-size: 5rem;
+    
+}
+
+/* 動態給予js建立的元素style */
+
+
+#noteContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+textarea{
+    display: block;
+    border: none;
+}
+
+#note{
+    margin: 2rem 2rem;
+}
+#featureContainer{
+    background-color: #9CBE5D;
+    display:flex;
+    justify-content: flex-end;
+    border-radius: 10px 10px 0px 0px;
+}
+
+i{
+    margin: .5rem;
+}
+
+#featureEdit{
+    cursor: pointer;
+    display: block;
+}
+#featureEdit:hover{
+    color: #EEEEEE;
+}
+
+#featureDelete{
+    cursor: pointer;
+    display: block;
+}
+#noteContent{
+    width: 17rem;
+    height: 20rem;
+}
+#noteContent:focus{
+    outline: none;
+}
+textarea{
+    background-color: #EEEEEE;
+    font-size: 1.3rem;
+}
+
+#featurePushpin{
+    display: block;
+    cursor: pointer;
+    
+}
+#featurePushpin:hover{
+    color: #ffdd59;
+}
+#featureDelete:hover{
+    color:#f00e0e
+}
+@media screen and (max-width:700px){
+    h1{
+        font-size: 3rem;
+    }
+    #newNoteBtn{
+        font-size: 1.5rem;
+    }
+}
